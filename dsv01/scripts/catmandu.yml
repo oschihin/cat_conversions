@@ -1,0 +1,7 @@
+importer:
+  dsv1_seq:
+     package: MARC
+     options:
+        type: ALEPHSEQ
+        fix: seq2m21.fix
+exporter:
