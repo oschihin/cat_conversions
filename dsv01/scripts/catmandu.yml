@@ -31,3 +31,9 @@ exporter:
      options:
         type: XML
         fix: clean_marc_xml.fix
+  a150_920_csv:
+    package: CSV
+    options:
+      collect_fields: 1
+      sep_char: |
+      fix: export-A150-920er.fix
