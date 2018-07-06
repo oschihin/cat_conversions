@@ -1,2 +1,0 @@
-# select-Kriterien für Aufnahmen von Luzerner Drucken (alle Jahrhunderte)
-select marc_any_match('909a', 'luzern[12]')
