@@ -1,7 +1,20 @@
 importer:
-  dsv1_seq:
+  add001_seq:
      package: MARC
      options:
         type: ALEPHSEQ
         fix: seq2m21.fix
+  import_seq:
+     package: MARC
+     options:
+        type: ALEPHSEQ
 exporter:
+  a332_csv:
+    package: CSV
+    options:
+      collect_fields: "1"
+      sep_char: "\t"
+      quote_char: ""
+      escape_char: ""
+      fields: _id,leader,f007,f008,f028,f090,f240,f245,f246,f264,f300,f500,f505,f511,f100,f700,f710,f773,f920
+      fix: create_csv.fix
