@@ -9,12 +9,25 @@ importer:
      options:
         type: ALEPHSEQ
 exporter:
+  short_csv:
+    package: CSV
+    options:
+      escape_char: ""
+      fields: SYS,Titel,Datum
+      fix: datumsanalyse_csv.fix
+      quote_char: ""
+      sep_char: ";"
   a332_csv:
     package: CSV
     options:
       collect_fields: "1"
-      sep_char: "\t"
-      quote_char: ""
       escape_char: ""
       fields: _id,leader,f007,f008,f028,f090,f240,f245,f246,f264,f300,f500,f505,f511,f100,f700,f710,f773,f920
       fix: create_csv.fix
+      quote_char: ""
+      sep_char: "\t"
+  clean_marc_xml:
+     package: MARC
+     options:
+        type: XML
+        fix: clean_marc_xml.fix

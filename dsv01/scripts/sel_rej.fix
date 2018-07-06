@@ -1,0 +1,9 @@
+# selects records with only one item of sublibrary Z900
+#select marc_all_match('PS1b','Z900')
+
+# selects records without items
+#reject marc_has('PS1')
+
+# selects records with items other than sublibrary Z900
+select marc_has('PS1')
+select marc_any_match('PS1b','^[^Z9]')

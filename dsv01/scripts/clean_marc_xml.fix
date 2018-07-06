@@ -1,4 +1,4 @@
-# select-Kriterien für Aufnahmen der Luzerner und Zentralschweizer Bibliografie
+# select-Kriterien für irgendwelche Aufnahmen (anpassen)
 select marc_match('909[L2]a', 'LU|IS')
 
 # Löschen und Korrigieren einiger Felder und Unterfelder

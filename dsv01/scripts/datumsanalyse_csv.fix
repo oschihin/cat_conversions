@@ -1,0 +1,6 @@
+select marc_any_match(264c, '[0-9]')
+marc_map(001a,SYS)
+marc_map(245a,Titel)
+marc_map(264c,Datum, join:';')
+
+retain('SYS','Titel','Datum')
