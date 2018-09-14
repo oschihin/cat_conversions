@@ -1,5 +1,5 @@
 # select-Kriterien für irgendwelche Aufnahmen (anpassen)
-select marc_match('909[L2]a', 'LU|IS')
+select marc_any_match('909[L2]a', 'LU|IS')
 
 # Löschen und Korrigieren einiger Felder und Unterfelder
 do marc_each()

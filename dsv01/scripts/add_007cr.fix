@@ -1,0 +1,22 @@
+# add field 007/0-1=cr at the correct position
+unless marc_has('007')
+  marc_add('007','_','cr-|||||||||||')
+  marc_cut(007, tmp007)
+  marc_paste(tmp007, at:LDR)
+end
+
+unless marc_any_match('337a','Computermedien')
+  marc_add('337','a','Computermedien','b','c','2','rdamedia')
+end
+
+unless marc_any_match('337a','ohne Hilfsmittel zu benutzen')
+  marc_add('337','a','ohne Hilfsmittel zu benutzen','b','n','2','rdamedia')
+end
+
+unless marc_any_match('338a','Online-Ressource')
+  marc_add('338','a','Online-Ressource','b','cr','2','rdacarrier')
+end
+
+unless marc_any_match('338a','Band')
+  marc_add('338','a','Band','b','nc','2','rdacarrier')
+end
