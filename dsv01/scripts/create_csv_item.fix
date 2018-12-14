@@ -1,0 +1,4 @@
+marc_map("949b","sub-library")
+marc_map("949c","collection")
+marc_map("949j","call-no")
+remove_field(record)
