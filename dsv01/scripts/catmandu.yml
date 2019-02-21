@@ -49,7 +49,7 @@ exporter:
     options:
       collect_fields: "1"
       escape_char: ""
-      fields: _id,sub-library,collection,call-no,
+      fields: _id,sub-library,collection,barcode,call-no
       fix: create_csv_item.fix
       quote_char: ""
       sep_char: "\t"
