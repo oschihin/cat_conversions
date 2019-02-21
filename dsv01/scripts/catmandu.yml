@@ -11,7 +11,7 @@ importer:
   import_xlsx:
     package: XLSX
     options:
-      worksheet: 0 # count from 0..n
+      worksheet: 1 # count from 0..n
       columns: 1
 exporter:
   # CSV exporter to produce Aleph sequential format
@@ -25,8 +25,8 @@ exporter:
       # fix to create generic field tag for sequential
       #fix: set_field(TAG,'70012 L')
       # fix to create field tag with value from column C
-      fix: paste(TAG,"~700","C","~  L",join_char:"")
-      fields: A,TAG,B
+      fix: paste(TAG,"~949","C","~  L",join_char:"")
+      fields: Systemnr.,TAG,B
   short_csv:
     package: CSV
     options:
