@@ -1,5 +1,6 @@
+marc_map("245a","title")
+marc_map("072", "subject-code", join: "; ")
+marc_map("082", "DDC", join: "; ")
 marc_map("949b","sub-library")
-marc_map("949c","collection")
-marc_map("949p","barcode")
 marc_map("949j","call-no")
 remove_field(record)
